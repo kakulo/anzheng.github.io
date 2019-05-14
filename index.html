@@ -15,6 +15,22 @@
 <script src="static/js/html5shiv.js"></script>
 <script src="static/js/respond.js"></script>
 <![endif]-->
+<style>
+#enter{
+    position: fixed;
+    top:200px;
+    left:0;
+    width: 100px;
+    height: 134px;
+}
+#enter>div{
+    height: 20px;
+    width: 51px;
+    position: absolute;
+    top:103px;
+    left:25px;
+}
+</style>
 </head>
 
 <body>
@@ -521,7 +537,7 @@
                                     <img src="static/image/project-1.jpg" alt="">
                                 </div>
                                 <h2 class="e-tit reveal-project"> “Building the Detailed Dynamic Dependency Graph (DDDG) for Applications” Advisor: Prof. Dong Li, Ignacio Laguna. (On-going)</h2>
-                                <a href="javascript:void(0);" onclick="return false" class="e-view reveal-project js-view-project">view details</a>
+                                <a href="" onclick="return false" class="e-view reveal-project xinym">view details</a>
                                 <div class="project-detail">
                                     <div class="x-text">
                                         <div class="x-duty">Constructing the DDDG graph for an entire application instead of only one function, one module, or one loop, in which the values for registers and memories, and the dynamic control flows are visible.</div>
@@ -939,6 +955,10 @@
             <span class="reveal-copyright">Last Updated:08/15/2018</span>
         </div>
     </div>
+    <div id="enter">
+        <img src="static/image/gg.png" alt="">
+        <div></div>
+    </div>
     <script src="static/js/jquery.js"></script>
     <script src="static/js/modernizr.js"></script>
     <script src="static/js/scrollto.js"></script>
@@ -946,5 +966,12 @@
     <script src="static/js/layer/layer.js"></script>
     <script src="static/js/index.js"></script>
 </body>
-
+<script>
+$(".xinym").click(function(){
+    window.location.href="https://cse.buffalo.edu/~jzola/uff/#top"
+})
+$("#enter>div").click(function(){
+    window.location.href="1.html"
+})
+</script>
 </html>
